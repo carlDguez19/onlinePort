@@ -177,6 +177,18 @@ ul{
         left: 15em;
         z-index: -3;
     }
+    .getStarted{
+        display: block;
+        border: none;
+        height: 3em;
+        background-color: #ffde59;
+        width: 10em;
+        color: #233e97;
+        font-size: 2rem;
+        font-weight: bold;
+        box-shadow: 5px 5px 3px #233e97;
+        margin: 1em auto;
+    }
 }
 
 // most of this is good for tablet but must resize for mobile and desktop
@@ -222,6 +234,7 @@ ul{
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.2rem;
+        margin-top: -5px;
         margin-bottom: 1rem;
     }
     p{

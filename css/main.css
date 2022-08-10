@@ -171,6 +171,18 @@ ul a:hover {
   left: 15em;
   z-index: -3;
 }
+.services .getStarted {
+  display: block;
+  border: none;
+  height: 3em;
+  background-color: #ffde59;
+  width: 10em;
+  color: #233e97;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 5px 5px 3px #233e97;
+  margin: 1em auto;
+}
 
 .container {
   margin: 10em 50%;
@@ -213,6 +225,7 @@ ul a:hover {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  margin-top: -5px;
   margin-bottom: 1rem;
 }
 .month p {
