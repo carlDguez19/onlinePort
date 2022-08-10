@@ -132,7 +132,44 @@ ul a:hover {
 }
 .services .topic {
   font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.services .info {
   font-size: 1.25rem;
+  line-height: 2rem;
+}
+.services .infoL {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.services .infoDot {
+  position: absolute;
+  height: 20em;
+  width: 20em;
+  background-color: #ffde59;
+  border-radius: 50%;
+  display: inline-block;
+  top: 75em;
+  left: 15em;
+  z-index: -3;
+}
+.services .hexa {
+  position: absolute;
+  top: 5.1em;
+  left: 0.85em;
+  z-index: -3;
+}
+.services .infoDot2 {
+  position: absolute;
+  height: 20em;
+  width: 20em;
+  background-color: #ffde59;
+  border-radius: 50%;
+  display: inline-block;
+  top: 142em;
+  left: 15em;
+  z-index: -3;
 }
 
 .container {
