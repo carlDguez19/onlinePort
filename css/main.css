@@ -129,6 +129,7 @@ ul a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   height: 22em;
+  margin-bottom: 2.5em;
 }
 .services .topic {
   font-weight: bold;
@@ -150,13 +151,13 @@ ul a:hover {
   background-color: #ffde59;
   border-radius: 50%;
   display: inline-block;
-  top: 75em;
-  left: 15em;
+  top: 82em;
+  left: 14em;
   z-index: -3;
 }
 .services .hexa {
   position: absolute;
-  top: 5.1em;
+  top: 5.54em;
   left: 0.85em;
   z-index: -3;
 }
@@ -167,8 +168,8 @@ ul a:hover {
   background-color: #ffde59;
   border-radius: 50%;
   display: inline-block;
-  top: 142em;
-  left: 15em;
+  top: 158em;
+  left: 14em;
   z-index: -3;
 }
 .services .getStarted {
@@ -181,7 +182,16 @@ ul a:hover {
   font-size: 2rem;
   font-weight: bold;
   box-shadow: 5px 5px 3px #233e97;
-  margin: 1em auto;
+  margin: 0 auto;
+}
+
+section.calendarS h1 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  text-transform: uppercase;
+  color: #233e97;
+  text-shadow: 3px 3px 1px #ffde59;
 }
 
 .container {
@@ -196,16 +206,16 @@ ul a:hover {
 }
 
 .calendar {
-  width: 45rem;
-  height: 52rem;
+  width: 30rem;
+  height: 37rem;
   background-color: rgb(71, 71, 71);
   box-shadow: 0 0.5rem 3rem black(0, 0, 0, 0.4);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .month {
   width: 100%;
-  height: 12rem;
+  height: 8rem;
   background-color: rgb(0, 70, 0);
   display: flex;
   justify-content: space-between;
@@ -213,38 +223,38 @@ ul a:hover {
   padding: 0.2rem;
   text-align: center;
   text-shadow: 0 0.3rem 0.5rem black(0, 0, 0, 0.5);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .month i {
-  margin: 0 20px;
+  margin: 0 30px;
   font-size: 2.5rem;
   cursor: pointer;
 }
 .month h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  margin-top: -5px;
-  margin-bottom: 1rem;
+  margin-top: 5px;
+  margin-bottom: 0rem;
 }
 .month p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .weekdays {
   width: 100%;
-  height: 5rem;
-  padding: 0 0.4rem;
+  height: 3rem;
+  padding: 0 0.2rem;
   display: flex;
   align-items: center;
 }
 
 .weekdays div {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
-  width: 6.3142857143rem;
+  width: 4.2857142857rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,10 +269,10 @@ ul a:hover {
 }
 
 .days div {
-  font-size: 1.4rem;
-  margin: 0.3rem;
-  width: 5.7714285714rem;
-  height: 5rem;
+  font-size: 1rem;
+  margin: 0.2rem;
+  width: 3.8285714286rem;
+  height: 3.85rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,4 +293,39 @@ ul a:hover {
   background-color: black;
   border: 0.2rem solid gray;
   cursor: pointer;
+}
+
+section.break .breakImg {
+  position: absolute;
+  top: 310%;
+  background: url(../images/Hero.png);
+  width: 100%;
+  height: 40%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -10;
+  background-size: cover;
+  background-position-y: 80%;
+}
+section.break p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18rem 10rem;
+}
+section.break #downArrow {
+  position: absolute;
+  margin: 0.25em;
+  top: 31em;
+  font-size: 7rem;
+  color: #ffde59;
+  stroke: #233e97;
+}
+
+.breakTxt {
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #233e97;
+  text-shadow: 3px 3px 1px #ffde59;
 }/*# sourceMappingURL=main.css.map */

@@ -39,7 +39,7 @@
                     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
                     <span class="iconify" id="close" data-icon="carbon:close-filled"></span>
                 </nav>
-                <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+                <!--<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>-->
                 <span class="iconify" id="menu" data-icon="entypo:menu"></span>
             </header>
             <section class="hero">
@@ -84,12 +84,13 @@
                 </div>
                 <button class="getStarted">GET STARTED!</button>
             </section>
-            <section class="break">
+            <section class="break"> <!--break maybe our picture??????????????????????????-->
                 <div class="breakImg"></div>
-                <p class="breakTxt">Dont stress about trash we got your back!</p>
+                <p class="breakTxt">Dont stress about trash. We got your back!</p>
+                <span class="iconify" data-icon="entypo:arrow-long-down" id="downArrow"></span>
             </section>
             <section class="calendarS" id="calendarS">
-                <h1>calendar</h1>
+                <h1 class="calendarH">calendar</h1>
                 <!--insert code to create a calendar here%&%&%&%&%&%&%&-->
                 <div class="container">
                     <div class="calendar">
@@ -160,7 +161,7 @@
             </section>
             <section class="contactUs" id="contactUs">
                 <div class="rectContact">
-                    <form > <!-- i need to find an algorithm to submit form to email found one(favorite) but find another-->
+                    <form > <!-- i need to find an algorithm to submit form to email found one(favorite) but find another -->
                         <label class="nameL" for="Fname">Name: </label>
                         <input class="name" id="Fname" type="text" placeholder="Enter name">
                         
@@ -168,10 +169,10 @@
                         <input class="complex" id="Ncomplex" type="text" placeholder="Enter complex">
 
                         <label class="apartmentL" for="Napartment">Apartment #: </label>
-                        <input class="apartment" id="Napartment" type="number" placeholder="Enter apartment #">
+                        <input class="apartment" id="Napartment" type="text" placeholder="Enter apartment #">
 
                         <label class="phoneL" for="Nphone">Phone #:</label>
-                        <input class="phone" id="Nphone" type="number" placeholder="Enter phone #">
+                        <input class="phone" id="Nphone" type="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
 
                         <label class="reasonL" for="Nreason">Reason: </label>
                         <select class="reason" id="Nreason">
