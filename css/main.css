@@ -185,7 +185,7 @@ ul a:hover {
   margin: 0 auto;
 }
 
-section.calendarS h1 {
+.calendarS.calendarH {
   text-align: center;
   margin: 0 auto;
   padding: 0;
