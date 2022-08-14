@@ -24,7 +24,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <!--end font-->
     </head>
-    <body>
+    <body id="top">
         <div class="wrapper">
             <header>
                 <p class="nameMenu"><span>A+</span>TrashService</p>
@@ -42,14 +42,16 @@
                 <!--<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>-->
                 <span class="iconify" id="menu" data-icon="entypo:menu"></span>
             </header>
-            <section class="hero">
+            <section class="hero" id="hero">
                 <div class="cont">
                     <div class="heroImg"></div>
                     <h1>We put trash in its place</h1>
                     <p class="subhead">Cleanliness done with ease and no hassle. We make haste with your waste!</p>
                     <span class="circle"></span>
                 </div>
-                <img src="images/APLUS.png" alt="A plus Trash Service" class="logo">
+                <div class="logoMainDiv">
+                    <img src="images/APLUS.png" alt="A plus Trash Service" class="logo">
+                </div>
             </section>
             <section class="services" id="services">
                 <h1>services</h1>
@@ -60,7 +62,7 @@
                         <p class="infoL">We provide a replaceable, sanitized, odor controlled 11.4 trash can to all residents.</p>
                         <div class="infoDot"></div>
                     </div>
-                    <img src="images/BINS.jpg" alt="black and blue bins against brick wall" >
+                    <img src="images/BINS.jpg" alt="black and blue bins against brick wall" id="bins" >
                 </div>
                 <div class="rectBorder">
                     <div class="content">
@@ -70,7 +72,7 @@
                         <p class="infoL">Trashcans should be brought in before 9am.</p>
                         <span style="color: #ffde59; font-size: 20em;" class="hexa">&#x2B22;</span>
                     </div>
-                    <img src="images/PAPERBIN.jpg" alt="close up of trash bin and cumbled paper" >
+                    <img src="images/PAPERBIN.jpg" alt="close up of trash bin and cumbled paper" id="paperBin" >
                 </div>
                 <div class="rectBorder">
                     <div class="content">
@@ -80,7 +82,7 @@
                         <p class="infoL">Our presence is a great crime deterrent. We are trained to report suspicious activity, and include it in a report back to you.</p>
                         <div class="infoDot2"></div>
                     </div>
-                    <img src="images/BAGS.jpg" alt="filled white bags on lawn" >
+                    <img src="images/BAGS.jpg" alt="filled white bags on lawn" id="bagsLawn">
                 </div>
                 <button class="getStarted">GET STARTED!</button>
             </section>
@@ -160,6 +162,7 @@
                 <script src="script.js"></script>
             </section>
             <section class="contactUs" id="contactUs">
+                <h1>contact us</h1>
                 <div class="rectContact">
                     <form > <!-- i need to find an algorithm to submit form to email found one(favorite) but find another -->
                         <label class="nameL" for="Fname">Name: </label>
@@ -193,8 +196,8 @@
             </section>
         </div>
     </body>
-    <footer>
-        <p class="address">A+TrashService LLC.<br>123 Main Rd.<br>12345 Denton, TX<br>USA<br><a href=".contactUs">Contact Us</a></p>
+    <footer> <!--FOOTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+        <p class="address">A+TrashService LLC.<br>123 Main Rd.<br>12345 Denton, TX<br>USA<br><a href="#top">Contact Us</a></p>
     </footer>
 
 </html>

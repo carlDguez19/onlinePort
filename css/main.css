@@ -41,8 +41,9 @@ header {
 }
 header #menu {
   width: 3em;
-  margin-top: -0.6em;
+  font-size: 1.7em;
   cursor: pointer;
+  color: #233e97;
 }
 
 nav {
@@ -63,9 +64,11 @@ section.hero .cont {
   height: 100vh;
 }
 section.hero .logo {
-  position: absolute;
-  top: 20em;
-  left: -3.3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -60em;
+  margin-bottom: 15em;
   height: 45em;
   width: 45em;
 }
@@ -124,12 +127,23 @@ ul a:hover {
   color: #233e97;
   margin-bottom: 5rem;
 }
-.services img {
+.services #bins, .services #paperBin {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 22em;
   margin-bottom: 2.5em;
+  -o-object-position: 0 100%;
+     object-position: 0 100%;
+}
+.services #bagsLawn {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 22em;
+  margin-bottom: 2.5em;
+  -o-object-position: 0 50%;
+     object-position: 0 50%;
 }
 .services .topic {
   font-weight: bold;
@@ -302,11 +316,9 @@ section.break .breakImg {
   background: url(../images/Hero.png);
   width: 100%;
   height: 40%;
-  -o-object-fit: contain;
-     object-fit: contain;
   z-index: -10;
   background-size: cover;
-  background-position-y: 80%;
+  background-position: 0 30%;
 }
 section.break p {
   display: flex;
@@ -319,14 +331,94 @@ section.break #downArrow {
   margin: 0.25em;
   top: 31em;
   font-size: 7rem;
-  color: #ffde59;
-  stroke: #233e97;
+  color: black;
+  stroke: gray;
+  stroke-width: 0.05rem;
 }
 
 .breakTxt {
+  text-align: center;
   flex-wrap: wrap;
   font-size: 2rem;
   font-weight: bold;
   color: #233e97;
   text-shadow: 3px 3px 1px #ffde59;
+}
+
+.contactUs h1 {
+  text-align: center;
+  margin-top: -12rem;
+  padding: 0;
+  text-transform: uppercase;
+  color: #233e97;
+  margin-bottom: 5rem;
+}
+
+.rectContact {
+  display: flex;
+  justify-content: center;
+}
+.rectContact label {
+  display: block;
+  text-align: right;
+  width: 10em;
+  float: left;
+  margin-right: 1em;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #233e97;
+}
+.rectContact input, .rectContact textarea, .rectContact select {
+  font-weight: 400;
+  margin: 0 2em;
+  display: block;
+  width: 20em;
+  min-height: 2em;
+  margin-bottom: 3em;
+}
+.rectContact input[type=submit] {
+  display: block;
+  width: 20em;
+  margin-left: 6em;
+  margin-top: 3em;
+  font-size: 1.5rem;
+  background-color: #233e97;
+  border-color: #233e97;
+  color: #ffde59;
+  box-shadow: 2px 2px 1px black;
+}
+
+footer {
+  width: 100%;
+  background-color: lightgray;
+  text-align: center;
+  font-size: 1.2rem;
+}
+footer a {
+  color: #233e97;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 2em 5em;
+  }
+  .services #paperBin, .services #bagsLawn {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 22em;
+    margin-bottom: 2.5em;
+    -o-object-position: 0 50%;
+       object-position: 0 50%;
+  }
+  .services .hexa {
+    top: 5.35em;
+  }
+  .services .infoDot2 {
+    top: 145em;
+  }
+  section.break p {
+    margin-bottom: 25rem;
+  }
 }/*# sourceMappingURL=main.css.map */

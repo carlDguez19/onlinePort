@@ -41,8 +41,9 @@ header{
     justify-content: space-between;
     #menu{
         width: 3em;
-        margin-top: -0.6em;
+        font-size: 1.7em;
         cursor: pointer;
+        color: #233e97;
     }
 }
 
@@ -65,9 +66,14 @@ section.hero{
         height: 100vh;
     }
     .logo{
-        position: absolute;
-        top: 20em;
-        left: -3.3em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -60em;
+        margin-bottom: 15em;
+        // position: absolute;
+        // top: 20em;
+        // left: -3.3em;
         height: 45em;
         width: 45em;
     }
@@ -130,11 +136,19 @@ ul{
         color: #233e97;
         margin-bottom: 5rem;
     }
-    img{
+    #bins, #paperBin{
         width: 100%;
         object-fit: cover;
         height: 22em;
         margin-bottom: 2.5em;
+        object-position: 0 100%;
+    }
+    #bagsLawn{
+        width: 100%;
+        object-fit: cover;
+        height: 22em;
+        margin-bottom: 2.5em;
+        object-position: 0 50%;
     }
     .topic{
         font-weight: bold;
@@ -313,10 +327,9 @@ section.break{
         background: url(../images/Hero.png);
         width: 100%;
         height: 40%;
-        object-fit: contain;
         z-index: -10;
         background-size: cover;
-        background-position-y: 80%;
+        background-position: 0 30%;
     }
     p{
         display: flex;
@@ -330,15 +343,114 @@ section.break{
         //right: 2em;
         top: 31em;
         font-size: 7rem;
-        color: #ffde59;
-        stroke: #233e97;
+        color: black;
+        stroke: gray;
+        stroke-width: .05rem;
     }
 }
 
 .breakTxt{
+    text-align: center;
     flex-wrap: wrap;
     font-size: 2rem;
     font-weight: bold;
     color: #233e97;
     text-shadow: 3px 3px 1px #ffde59;
+}
+
+//CONTACT FORM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+.contactUs{
+    h1{
+        text-align: center;
+        margin-top: -12rem;
+        padding: 0;
+        text-transform: uppercase;
+        color: #233e97;
+        margin-bottom: 5rem;
+    }
+}
+.rectContact{
+    display: flex;
+    justify-content: center;
+    label{
+        display: block;
+        text-align: right;
+        width: 10em;
+        float: left;
+        margin-right: 1em;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #233e97;
+    }
+    input, textarea, select{
+        font-weight: 400;
+        margin: 0 2em;
+        display: block;
+        width: 20em;
+        min-height: 2em;
+        margin-bottom: 3em;
+    }
+    input[type="submit"]{
+        display: block;
+        width: 20em;
+        margin-left: 6em;
+        margin-top: 3em;
+        font-size: 1.5rem;
+        background-color: #233e97;
+        border-color: #233e97;
+        color: #ffde59;
+        box-shadow: 2px 2px 1px black;
+    }
+}
+//FOOTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+footer{
+    width: 100%;
+    background-color: lightgray;
+    //border-top: 1px solid gray;
+    text-align: center;
+    font-size: 1.2rem;
+    a{
+        color: #233e97;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: 680px){ //$$$$%$%$%$%$%$%$%$%$%$%$$%$%$%$%%$% TABLET $%$%$%$%$%$%$%$%$%$%$%$%$%%$%$%%$
+    body{
+        margin: 2em 5em;
+        //font-family: 'Poppins', sans-serif;
+    }
+    .services{
+        #paperBin, #bagsLawn{
+            width: 100%;
+            object-fit: cover;
+            height: 22em;
+            margin-bottom: 2.5em;
+            object-position: 0 50%;
+        }
+        .hexa{
+            top: 5.35em;
+        }
+        .infoDot2{
+            top: 145em;
+        }
+    }
+    section.break{
+        p{
+            margin-bottom: 25rem;
+        }
+    }
+
+    // hero{
+    //     .logoMainDiv{
+            
+    //         .logoMain{
+    //             position: block;
+    //             margin-right: auto;
+    //             margin-left: auto;
+    //             height: 45em;
+    //             width: 45em;
+    //         }
+    //     }
+    // }
 }
