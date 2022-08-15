@@ -200,12 +200,15 @@ ul a:hover {
   margin: 0 auto;
 }
 
-.calendarS > .calendarH {
-  text-align: center;
-  margin: 0 auto;
-  padding: 0;
+section.calendarS {
+  position: relative;
+}
+section.calendarS .calendarH {
+  display: flex;
+  justify-content: center;
   text-transform: uppercase;
   color: #233e97;
+  margin-top: -12rem;
   margin-bottom: -7em;
   text-shadow: 3px 3px 1px #ffde59;
 }
@@ -311,15 +314,17 @@ ul a:hover {
   border: 0.2rem solid gray;
 }
 
+section.break {
+  position: relative;
+}
 section.break .breakImg {
   position: absolute;
-  top: 310%;
+  top: -30%;
   background: url(../images/Hero.png);
   width: 100%;
-  height: 40%;
+  height: 70%;
   z-index: -10;
   background-size: cover;
-  background-position: 0 30%;
 }
 section.break p {
   display: flex;
@@ -328,7 +333,7 @@ section.break p {
   margin: 18rem 10rem;
 }
 section.break #downArrow {
-  position: absolute;
+  position: relative;
   margin: 0.25em;
   top: 31em;
   font-size: 7rem;
