@@ -33,6 +33,7 @@ body a {
 .nameMenu {
   color: #233e97;
   font-weight: bold;
+  margin-top: 0.6rem;
 }
 
 header {
@@ -47,7 +48,6 @@ header #menu {
 }
 
 nav {
-  display: none;
   position: fixed;
   right: 0;
   top: 0;
@@ -92,7 +92,7 @@ h1 {
   background-color: #ffde59;
   border-radius: 50%;
   display: inline-block;
-  top: 5%;
+  top: 8%;
   left: -3.5em;
   z-index: -4;
 }
@@ -115,8 +115,9 @@ ul a:hover {
 #close {
   position: absolute;
   margin: 2em;
-  right: 20em;
+  right: 0.1em;
   top: -1em;
+  font-size: 1.5rem;
 }
 
 .services h1 {
@@ -259,7 +260,6 @@ ul a:hover {
 
 .weekdays {
   width: 100%;
-  height: 3rem;
   padding: 0 0.2rem;
   display: flex;
   align-items: center;
@@ -277,6 +277,7 @@ ul a:hover {
 }
 
 .days {
+  height: 3rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -420,5 +421,89 @@ footer a {
   }
   section.break p {
     margin-bottom: 25rem;
+  }
+}
+@media only screen and (min-width: 920px) {
+  #menu {
+    display: none;
+  }
+  nav {
+    transform: translateX(0%);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav #close {
+    display: none;
+  }
+  ul {
+    display: flex;
+    margin: 0;
+  }
+  ul a {
+    color: #233e97;
+    padding: 0.5em 1.5em;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  ul a:hover {
+    background: none;
+    text-decoration: underline;
+    color: #233e97;
+  }
+  .nameMenu {
+    font-size: 1.5rem;
+    color: #ffde59;
+    text-shadow: 1px 1px 2px rgb(70, 70, 70);
+  }
+  .nameMenu span {
+    color: #233e97;
+  }
+  .cont {
+    color: #233e97;
+    height: 100vh;
+    text-align: center;
+  }
+  .cont h1 {
+    position: absolute;
+    right: 5rem;
+    font-size: 5rem;
+    width: 50%;
+    line-height: 6rem;
+    text-shadow: 3px 3px 2px rgb(71, 71, 71);
+  }
+  .cont p {
+    color: #233e97;
+    position: absolute;
+    top: 28rem;
+    right: 10rem;
+    width: 35%;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .circle {
+    left: unset;
+    right: 20%;
+    top: 14em;
+  }
+  .heroImg {
+    left: unset;
+    right: 0;
+    width: 60%;
+    height: 70vh;
+  }
+  .logoMainDiv {
+    position: absolute;
+    left: 2em;
+    top: 65em;
+  }
+  .services {
+    margin-top: -20rem;
+  }
+  .services #bins {
+    -o-object-position: 0 85%;
+       object-position: 0 85%;
   }
 }/*# sourceMappingURL=main.css.map */
